@@ -35,7 +35,7 @@ def printer(attendees)
     puts badges[i]
   end
 
-  for i in 0..room_assigns.length
+  for i in 0..room_assigns.length - 1
     puts room_assigns[i]
   end
 end
