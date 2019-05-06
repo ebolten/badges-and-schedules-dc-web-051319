@@ -10,7 +10,7 @@ def batch_badge_creator(array)
   badges = []
 
   for i in 0..array.size
-    badges.unshift(badge_maker(array[i]))
+    badges.insert(i,badge_maker(array[i]))
   end
   return badges
 end
@@ -20,7 +20,7 @@ def assign_rooms(array)
   room_assigns = []
 
   for i in 0..array.size
-    room_assigns.unshift("Hello, #{array[i]}! You'll be assigned to room #{i}!")
+    room_assigns.insert(i,"Hello, #{array[i]}! You'll be assigned to room #{i}!")
   end
   return room_assigns
 end
