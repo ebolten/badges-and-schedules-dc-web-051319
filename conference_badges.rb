@@ -33,4 +33,8 @@ def printer(attendees)
   for i in 1..room_assigns.size
     puts room_assigns[i]
   end
-end
+
+
+
+
+  
