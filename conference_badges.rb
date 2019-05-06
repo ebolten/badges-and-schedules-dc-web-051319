@@ -15,4 +15,11 @@ end
 def printer(attendees)
 end
 
-def assign_rooms()
+def assign_rooms(array)
+  room_assigns = []
+
+  for i in 1..array.size
+    room_assigns.unshift( "Hello, #{array[i]}! You'll be assigned to room #{i}!")
+  end
+  return room_assigns
+end
