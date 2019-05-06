@@ -2,6 +2,7 @@
 
 def badge_maker(name)
   return "Hello! My name is #{name}."
+end
 
 def batch_badge_creator(array)
   badges = []
@@ -33,8 +34,4 @@ def printer(attendees)
   for i in 1..room_assigns.size
     puts room_assigns[i]
   end
-
-
-
-
-  
+end
