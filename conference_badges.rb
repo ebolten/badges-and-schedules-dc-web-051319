@@ -1,15 +1,15 @@
 # Write your code here.
 
 def badge_maker(name)
-  badge = "Hello! My name is #{name}."
+  badge = "Hello, my name is #{name}."
   return badge
 end
 
 def batch_badge_creator(array)
   badges = []
 
-  for i in 1..array.size
-    badges.push(badge_maker(array[i]))
+  for i in 0..array.size
+    badges.unshift(badge_maker(array[i]))
   end
   return badges
 end
