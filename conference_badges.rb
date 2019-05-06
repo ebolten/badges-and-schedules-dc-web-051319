@@ -7,7 +7,7 @@ def batch_badge_creator(array)
   badges = []
 
   for i in 1..array.size
-    badges.push("Hello! My name is #{array[i]}.")
+    badges.push(badge_maker(array[i]))
   end
   return badges
 end
