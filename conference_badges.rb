@@ -20,7 +20,7 @@ def assign_rooms(array)
   room_assigns = []
 
   for i in 0..array.length - 1
-    room_assigns.insert(i,"Hello, #{array[i]}! You'll be assigned to room #{i}!")
+    room_assigns.insert(i,"Hello, #{array[i]}! You'll be assigned to room #{i + 1}!")
   end
   return room_assigns
 end
