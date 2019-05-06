@@ -19,7 +19,7 @@ end
 def assign_rooms(array)
   room_assigns = []
 
-  for i in 1..array.length
+  for i in 1..array.length - 1
     room_assigns.insert(i,"Hello, #{array[i]}! You'll be assigned to room #{i}!")
   end
   return room_assigns
@@ -31,7 +31,7 @@ def printer(attendees)
   badges = batch_badge_creator(attendees)
   room_assigns = assign_rooms(attendees)
 
-  for i in 1..badges.length
+  for i in 1..badges.length - 1
     puts badges[i]
   end
 
