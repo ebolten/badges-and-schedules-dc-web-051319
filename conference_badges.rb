@@ -5,6 +5,7 @@ def badge_maker(name)
   return badge
 end
 
+
 def batch_badge_creator(array)
   badges = []
 
@@ -14,14 +15,16 @@ def batch_badge_creator(array)
   return badges
 end
 
+
 def assign_rooms(array)
   room_assigns = []
 
-  for i in 1..array.size
+  for i in 0..array.size
     room_assigns.unshift("Hello, #{array[i]}! You'll be assigned to room #{i}!")
   end
   return room_assigns
 end
+
 
 def printer(attendees)
 
